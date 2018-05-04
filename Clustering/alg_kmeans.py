@@ -12,7 +12,7 @@ dataset = pd.read_csv(dataset_path)
 X = dataset.iloc[:, [3,4]].values
 
 # Using the elbow method to find the optimal number of clusters
-froom sklearn.cluster import KMeans
+from sklearn.cluster import KMeans
 wcss = []
 for i in range(1, 11):
   kmeans = KMeans(n_clusters = i, init = 'k-means++', max_iter = 300, n_init = 10)
