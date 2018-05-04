@@ -131,7 +131,7 @@ OrderedStatistic = namedtuple( # pylint: disable=C0103
 
 
 ################################################################################
-# Inner functions.
+# Inner functions
 ################################################################################
 def create_next_candidates(prev_candidates, length):
     """
