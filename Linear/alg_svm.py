@@ -41,6 +41,7 @@ X_test = sc.transform(X_test)
 # Fitting Logistic Regression to the training set
 from sklearn.svm import SVC
 classifier = SVC(kernel = 'linear')
+classifier.fit(X_train, y_train)
 
 # Prediction the Test set result
 y_pred = classifier.predict(X_test)
