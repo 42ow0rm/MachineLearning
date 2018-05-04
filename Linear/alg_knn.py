@@ -51,8 +51,8 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
 # Visualising the Training set result
-graph_classifier(X_train, y_train, 'Logistic Regression (Training set)', 'Age', 'Estimated Salary')
+graph_classifier(X_train, y_train, 'K-NN (Training set)', 'Age', 'Estimated Salary')
 
 # Visualising the Test set result
-graph_classifier(X_test, y_test, 'Logistic Regression (Test set)', 'Age', 'Estimated Salary')
+graph_classifier(X_test, y_test, 'K-NN (Test set)', 'Age', 'Estimated Salary')
 
