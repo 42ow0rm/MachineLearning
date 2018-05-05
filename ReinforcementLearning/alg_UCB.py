@@ -17,22 +17,22 @@ dataset = pd.read_csv(dataset_path, header = None)
 
 # Implementing Random Selection to compare the results
 def RandomSelection():
-    items_selected = []
-    total_reward = 0
-    for i in range(0,N):
-      item = random.randrange(10)
-      items_selected.append(item)
-      reward = dataset.values[n, item]
-      total_reward = total_reward + reward
-      histogram(items_seleted, 'Histogram of ads selections', 'Items', 'Number of times each item was selected')
+  items_selected = []
+  total_reward = 0
+  for i in range(0,N):
+    item = random.randrange(10)
+    items_selected.append(item)
+    reward = dataset.values[n, item]
+    total_reward = total_reward + reward
+    histogram(items_seleted, 'Histogram of ads selections', 'Items', 'Number of times each item was selected')
       
 def histogram(items, title = 'Title', xlabel = 'x', ylabel = 'y'):
-    # Visualising the results - Histogram
-    plt.hist(items)
-    plt.title(title)
-    plt.xlabel(xlabel)
-    plt.ylabel(ylabel)
-    plt.show()
+  # Visualising the results - Histogram
+  plt.hist(items)
+  plt.title(title)
+  plt.xlabel(xlabel)
+  plt.ylabel(ylabel)
+  plt.show()
 
 # Implementing the UCB
 numbers_of_selections = [0] * d
