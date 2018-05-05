@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import random
-impoert math
+import math
 
 # Settings
 dataset_path = "path/to/the/dataset.csv"
