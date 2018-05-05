@@ -36,8 +36,10 @@ for n in range(0, N):
       max_random = upper_bound
       item = i
   items_selected.append(item)
-  numbers_of_selections[item] = numbers_of_selections[item] + 1
   reward = dataset.values[n, item]
-  sums_of_rewards[items] = sums_of_rewards[items] + reward
+  if reward ==1:
+    number_of_rewards_1[item] = number_of_rewards_1[item] + 1
+  else:
+    number_of_rewards_0[item] = number_of_rewards_0[item] + 1
   total_reward = total_reward + reward
 histogram(items_seleted, 'Histogram of ads selections', 'Items', 'Number of times each item was selected')
