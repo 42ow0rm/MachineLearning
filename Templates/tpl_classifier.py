@@ -24,9 +24,9 @@ def graph_classifier(X_set, y_set, title = 'Graphic', xlabel = 'x', ylabel = 'y'
 	plt.show()
 
 # Importing the dataset
-dataset = d.read_csv(dataset_path)
+dataset = pd.read_csv(dataset_path)
 X = dataset.iloc[:, [2,3]].values
-y = dataset.iloc[;, 4].values
+y = dataset.iloc[:, 4].values
 
 # Spitting the dataset into the Training set and Test set
 from sklearn.cross_validation import train_test_split
